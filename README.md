@@ -1,3 +1,8 @@
 # xgui
 
-Run with npm start
+# Setup
+git clone
+npm install
+
+# Run
+npm start
