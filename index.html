@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>X</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+	<!-- /core JS files -->
+
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+	<!-- /theme JS files -->
+
+    <!-- NF -->
+
+        <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+        <!-- ui.router -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+        <!-- ngResource -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.5.8/angular-resource.min.js"></script>
+		<!-- ngSanitize -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+
+		<!-- bootstrap ui -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
+
+        <!-- Satellizer -->
+        <script src="https://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
+
+		<!-- ngTable -->
+		<script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+
+		<script src="js/libs/angular-relative-date.min.js"></script>
+
+        <!-- app -->
+        <script src="js/app.js"></script>
+        <script src="js/app/login/login.js"></script>
+		<script src="js/app/navbar/navbar.js"></script>
+		<script src="js/app/dashboard/dashboard.js"></script>
+
+		<script src="js/app/crm/crm.js"></script>
+		<script src="js/app/crm/accounts/accounts.js"></script>
+		<script src="js/app/crm/contacts/contacts.js"></script>
+
+		<script src="js/app/finance/finance.js"></script>
+		<script src="js/app/user/user.js"></script>
+
+        <!--  -->
+        <!--  -->
+
+
+</head>
+
+
+<!-- Liquid layout -->
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse" ui-view="navbar">
+	</div>
+	<!-- /main navbar -->
+
+	<!-- Navigation navbar -->
+	<div class="navbar navbar-default navbar-affix-top" ui-view="navbar-second">
+	</div>
+	<!-- /navigation navbar -->
+
+	<div ui-view="content" id="content-container">
+	</div>
+
+</body>
+
+</html>

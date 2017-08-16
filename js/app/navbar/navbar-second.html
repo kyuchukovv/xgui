@@ -1,0 +1,32 @@
+		<ul class="nav navbar-nav no-border visible-xs-block">
+			<li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse" id="navbar-second-toggle">
+			<ul class="nav navbar-nav">
+				<li ui-sref-active="active"><a ui-sref="dashboard"><i class="icon-display4 position-left"></i> Dashboard</a></li>
+
+				<li class="dropdown" ui-sref-active="active">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-make-group position-left"></i> People <span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu width-200">
+						<li ui-sref-active="active"><a ui-sref="crm.accounts.all"><i class="icon-align-center-horizontal"></i> Accounts</a></li>
+						<li ui-sref-active="active"><a ui-sref="crm.contacts.all"><i class="icon-people"></i> Contacts</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown" ui-sref-active="active">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-strategy position-left"></i> Finance <span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu width-200">
+						<li ui-sref-active="active"><a ui-sref="finance.invoices.all"><i class="icon-align-center-horizontal"></i> Invoices</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+    

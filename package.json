@@ -1,0 +1,14 @@
+{
+    "name": "xgui",
+    "private": true,
+    "version": "0.0.0",
+    "description": "X GUI",
+    "repository": "https://github.com/kliment-toshkov/xgui.git",
+    "license": "MIT",
+    "devDependencies": {
+	"http-server": "^0.9.0"
+    },
+    "scripts": {
+	"start": "http-server -a localhost -p 8000 -c-1 ./"
+    }
+}

@@ -1,0 +1,156 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-body">
+                <form class="form-horizontal" action="#">
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Overview</legend>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Roles</label>
+                            <div class="col-lg-10">
+                                <div class="btn-group">
+                                    <label class="btn btn-primary" ng-model="contact.role_admin" uib-btn-checkbox>Admin</label>
+                                    <label class="btn btn-primary" ng-model="contact.role_tech" uib-btn-checkbox>Tech</label>
+                                    <label class="btn btn-primary" ng-model="contact.role_finance" uib-btn-checkbox>Finance</label>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Notes</label>
+                            <div class="col-lg-10">
+                                <textarea rows="5" cols="5" class="form-control" ng-model="contact.notes"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Emails</legend>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Email</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="contact.email">
+                            </div>
+                            <label class="control-label col-lg-2">Email Alt</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="contact.email_alt">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Phones</legend>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Phone</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="contact.phone">
+                            </div>
+                            <label class="control-label col-lg-2">Phone Alt</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="contact.phone_alt">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Fax</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="contact.phone_fax">
+                            </div>
+                            <label class="control-label col-lg-2">Mobile</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="contact.phone_mobile">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="panel panel-flat">            
+            <div class="panel-body">
+                <form class="form-horizontal" action="#">
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Address</legend>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Street</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.address_street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">City</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.address_city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">PO Code</label>
+                            <div class="col-lg-2">
+                                <input type="text" class="form-control" ng-model="contact.address_pocode">
+                            </div>
+                            <label class="control-label col-lg-1">State</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" ng-model="contact.address_state">
+                            </div>
+                            <label class="control-label col-lg-1">Country</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" ng-model="contact.address_country">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="panel panel-flat">            
+            <div class="panel-body">
+                <form class="form-horizontal" action="#">
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Social</legend>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Facebook</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.facebook">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Twitter</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.twitter">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Skype</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.skype">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">ICQ</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.icq">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Contacts -->

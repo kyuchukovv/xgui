@@ -1,0 +1,28 @@
+<!-- Vertical form modal -->
+    <div class="modal-content">
+        <div class="modal-header bg-primary">
+            <button type="button" class="close" ng-click="close ()">&times;</button>
+            <h5 class="modal-title">Create Contact</h5>
+        </div>
+
+        <form class="form-horizontal" action="#">
+            <div class="modal-body">
+                <form class="form-horizontal" action="#">
+                    <fieldset class="content-group">
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="contact.name">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" ng-click="close ()">Close</button>
+                <button type="submit" class="btn btn-primary" ng-click="submit ()">Submit</button>
+            </div>
+        </form>
+    </div>
+<!-- /vertical form modal -->

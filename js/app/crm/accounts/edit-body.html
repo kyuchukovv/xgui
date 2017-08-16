@@ -1,0 +1,195 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-flat">
+            <div class="panel-body">
+                <form class="form-horizontal" action="#">
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Overview</legend>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Type</label>
+                            <div class="col-lg-4">
+                                <div class="btn-group">
+                                    <label class="btn btn-primary" ng-model="account.type" uib-btn-radio="'private'">Private</label>
+                                    <label class="btn btn-primary" ng-model="account.type" uib-btn-radio="'business'">Business</label>
+                                </div>
+                            </div>
+                            <label class="control-label col-lg-2">ID Code</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="account.code_id">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Language</label>
+                            <div class="col-lg-4">
+                                <div class="btn-group">
+                                    <label class="btn btn-primary" ng-model="account.language" uib-btn-radio="'bg'">Български</label>
+                                    <label class="btn btn-primary" ng-model="account.language" uib-btn-radio="'en'">English</label>
+                                </div>
+                            </div>
+                            <label class="control-label col-lg-2">VAT Code</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="account.code_vat">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="account.name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Notes</label>
+                            <div class="col-lg-10">
+                                <textarea rows="5" cols="5" class="form-control" ng-model="account.notes"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Phones</legend>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Phone</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="account.phone">
+                            </div>
+                            <label class="control-label col-lg-2">Phone Alt</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="account.phone_alt">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Fax</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="account.phone_fax">
+                            </div>
+                            <label class="control-label col-lg-2">Mobile</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" ng-model="account.phone_mobile">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="panel panel-flat">            
+            <div class="panel-body">
+                <form class="form-horizontal" action="#">
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Billing address</legend>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Street</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="account.billing_address_street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">City</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="account.billing_address_city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">PO Code</label>
+                            <div class="col-lg-2">
+                                <input type="text" class="form-control" ng-model="account.billing_address_pocode">
+                            </div>
+                            <label class="control-label col-lg-1">State</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" ng-model="account.billing_address_state">
+                            </div>
+                            <label class="control-label col-lg-1">Country</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" ng-model="account.billing_address_country">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="content-group">
+                        <legend class="text-bold">Shipping address</legend>
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">Street</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="account.shipping_address_street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">City</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="account.shipping_address_city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-lg-2">PO Code</label>
+                            <div class="col-lg-2">
+                                <input type="text" class="form-control" ng-model="account.shipping_address_pocode">
+                            </div>
+                            <label class="control-label col-lg-1">State</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" ng-model="account.shipping_address_state">
+                            </div>
+                            <label class="control-label col-lg-1">Country</label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" ng-model="account.shipping_address_country">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Contacts -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">{{ account.name }} contacts:</h6>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Roles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="contact in account.contacts">
+                            <td>
+                                <i class="icon-woman" ng-if="contact.gender == 'female'"></i>
+                                <i class="icon-man" ng-if="contact.gender == 'male'"></i>
+                                <a ui-sref="crm.contacts.edit ({id: contact.id})">{{ contact.name }}</a>
+                                </td>
+                            <td>{{ contact.email }} {{ contact.email_alt }}</td>
+                            <td>{{ contact.phone_mobile }} {{ contact.phone_work }} {{ contact.phone_home }} {{ contact.phone_other }} {{ contact.phone_fax }} </td>
+                            <td>{{ contact.address_street }} {{ contact.address_city }} {{ contact.address_pocode }} {{ contact.address_country }}</td>
+                            <td>
+                                {{ contact.role_admin }}
+                                {{ contact.role_tech }}
+                                {{ contact.role_finance }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</div>

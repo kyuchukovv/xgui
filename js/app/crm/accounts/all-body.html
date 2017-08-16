@@ -1,0 +1,21 @@
+
+	<div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h5 class="panel-title">Panel title</h6>
+                </div>
+                
+
+                    <table ng-table="c.tp" class="table datatable-basic table-striped" show-filter="true">
+                        <tr ng-repeat="user in $data">
+                            <td title="'Name'" filter="{ name: 'text'}" sortable="'name'"><a ui-sref="crm.accounts.edit ({id: user.id})">{{ user.name }}</a></td>
+                            <td title="'Id'" filter="{ code_id: 'text'}" sortable="'code_id'">{{ user.code_id }}</td>
+                            <td title="'Updated'">{{ user.updated_at | relativeDate }}</td>
+                        </tr>
+                    </table>
+
+            </div>
+		</div>
+    </div>
+
